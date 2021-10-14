@@ -1,4 +1,9 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Kanit:wght@500&family=Montserrat:wght@500&family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* TOP NAVIGATION */
 
 * { 
     box-sizing: border-box; 
@@ -7,9 +12,8 @@
 }
 
 li, a { 
-    font-family: "Montserrat", sans-serif; 
-    font-weight: 500; 
-    font-size: 16px; 
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
     color: #edf0f1; 
     text-decoration: none; 
 }
@@ -27,7 +31,6 @@ header {
 
 .logo { 
     height: 60px;
-    cursor: pointer;
 }
 
 .nav_links {
@@ -45,4 +48,85 @@ header {
 
 .nav_links li a:hover {
     color: gray;
+    text-decoration: none;
 }
+
+/* BODY STYLES */
+
+body {
+
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-size-adjust: auto;
+    text-align: center;
+  
+  }
+
+  /* HEADER 1 STYLES */
+
+  h1 { 
+
+    font-size: 3em;
+    padding-top: 40px;
+    text-align: center;
+    color: dimgray;
+    font-family: 'Andada Pro', serif;
+
+  }
+
+  /* HEADER 2 STYLES */
+
+  h2 {
+      font-size: 1.5em;
+      text-align: center;
+      color: darkgray;
+      font-family: 'Andada Pro', serif;
+  }
+
+  /* WORKS STYLES */
+
+  .work {
+
+    background: white;
+    padding-bottom: 10px;
+
+  }
+
+  /* WORKS GALLERY FLEX BOX */
+
+ .gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    background: white;
+    margin: 50 50 50 50;
+    
+  }
+
+  .gallery img {
+
+    margin: 10px;
+    border: 3px solid dimgray;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
+    transition: 1s;
+    max-height: auto;
+
+  }
+
+  .gallery img:hover {
+
+      transform: scale(1.1);
+      
+  }
+
+
+
+
+  
+
