@@ -1,11 +1,169 @@
-
 /* FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Kanit:wght@500&family=Montserrat:wght@500&family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-/* TOP NAVIGATION */
 
+/* BODY STYLES */
+
+body {
+
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-size-adjust: auto;
+    text-align: center;
+  
+  }
+
+/* TOP NAV */
+
+.header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Kanit';
+    text-transform: uppercase;;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: black;
+    color: gray
+  }
+  
+.logoimg {
+
+    max-width: 300px;
+
+}
+
+  .header .logo {
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    max-width: 300px;
+
+  }
+  
+  /* HAMBURGER STYLE MENU */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: whitesmoke;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* MEDIA QUERY 48em = 768px */
+  
+  @media (min-width: 768px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+
+    .carouselarea {
+
+        display: block;
+    }
+
+  }
+  
+
+/* TOP NAVIGATION */
+/*
 * { 
 
     box-sizing: border-box; 
@@ -68,7 +226,7 @@ header {
     cursor: pointer;
 
 }
-
+*/
 
 /* FOR ID LINK TAGS */
 
@@ -78,16 +236,12 @@ header {
 
 }
 
-/* BODY STYLES */
+/* CAROUSEL */
 
-body {
+.carouselarea {
 
-    background-color: lightgray;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    font-size-adjust: auto;
-    text-align: center;
-  
+    padding-top: 80px;
+
   }
 
   /* HEADER 1 STYLES */
@@ -303,11 +457,14 @@ footer {
 
 }
 
-@media only screen and (max-width:640px) {
-    .header {
-      order: 0;
+  /* MEDIA QUERY 48em = 768px */
+  
+  @media (max-width: 320px) {
+    .carouselarea {
+
+        display:none;
     }
-    .navigation_links {
-      order: -1;
-    }
+
   }
+  
+ 
