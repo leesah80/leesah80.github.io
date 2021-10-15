@@ -303,13 +303,11 @@ footer {
 
 }
 
-@media (max-width: 320px) {
-
-    .logo { 
-
-        height: auto;
-        width: auto;
-
+@media only screen and (max-width:640px) {
+    .header {
+      order: 0;
     }
-
+    .navigation_links {
+      order: -1;
+    }
   }
