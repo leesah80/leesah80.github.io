@@ -1,3 +1,4 @@
+
 /* FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Kanit:wght@500&family=Montserrat:wght@500&family=Oswald:wght@500&display=swap');
@@ -67,6 +68,7 @@ header {
     cursor: pointer;
 
 }
+
 
 /* FOR ID LINK TAGS */
 
@@ -300,3 +302,14 @@ footer {
     color: whitesmoke;
 
 }
+
+@media (max-width: 320px) {
+
+    .logo { 
+
+        height: auto;
+        width: auto;
+
+    }
+
+  }
