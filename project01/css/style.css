@@ -459,7 +459,7 @@ footer {
 
   /* MEDIA QUERY 48em = 768px */
   
-  @media (max-width: 320px) {
+  @media (max-width: 500px) {
     .carouselarea {
 
         display:none;
