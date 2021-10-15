@@ -3,16 +3,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2022.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; min-height: 17.0px}
-    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica}
-    ul.ul1 {list-style-type: disc}
-    ul.ul2 {list-style-type: hyphen}
-  </style>
 </head>
 <body>
 <p class="p1">Project 1 - Heady Hecate Resin Art website</p>
